@@ -47,6 +47,8 @@ func main() {
 	// can use this to discover the type of an interface
 	// value.  In this example, the variable `t` will have the
 	// type corresponding to its clause.
+	// 使用匿名函式創建的變數，能夠接受一個 interface{} 參數的函式。
+	// 在 Go 語言中，interface{} 是一種空介面，可以接受任何型別的值。
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:

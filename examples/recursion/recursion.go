@@ -21,6 +21,8 @@ func main() {
 	// Closures can also be recursive, but this requires the
 	// closure to be declared with a typed `var` explicitly
 	// before it's defined.
+	// 這部分是變數的型別，它指定了 fib 變數可以存儲的函式類型。
+	// 在這種情況下，這個型別表示 fib 變數可以存儲一個接受一個整數參數 n，並返回一個整數結果的函式。
 	var fib func(n int) int
 
 	fib = func(n int) int {

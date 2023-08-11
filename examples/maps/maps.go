@@ -9,6 +9,7 @@ func main() {
 
 	// To create an empty map, use the builtin `make`:
 	// `make(map[key-type]val-type)`.
+	// string 是 map 的鍵的型別，int 是對應的值的型別，
 	m := make(map[string]int)
 
 	// Set key/value pairs using typical `name[key] = val`
@@ -46,6 +47,8 @@ func main() {
 	// like `0` or `""`. Here we didn't need the value
 	// itself, so we ignored it with the _blank identifier_
 	// `_`.
+	// 使用底線(_)的特殊情況，這代表我們不關心這個值，只是要檢查該鍵是否存在於map中。
+	// 這行程式碼的另一部分是prs變數的賦值，它會被設置為布林值，表示鍵是否存在於map中。如果"k2"存在，prs會被設置為true，否則為false。
 	_, prs := m["k2"]
 	fmt.Println("prs:", prs)
 

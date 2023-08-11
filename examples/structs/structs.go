@@ -45,11 +45,11 @@ func main() {
 	// You can also use dots with struct pointers - the
 	// pointers are automatically dereferenced.
 	sp := &s
-	fmt.Println(sp.age)
+	fmt.Println(sp.age) // Output: 50
 
 	// Structs are mutable.
 	sp.age = 51
-	fmt.Println(sp.age)
+	fmt.Println(sp.age) // Output: 51
 
 	// If a struct type is only used for a single value, we don't
 	// have to give it a name. The value can have an anonymous
@@ -62,5 +62,5 @@ func main() {
 		"Rex",
 		true,
 	}
-	fmt.Println(dog)
+	fmt.Println(dog) // Output: {Rex true}
 }

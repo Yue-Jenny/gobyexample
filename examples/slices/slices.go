@@ -21,6 +21,7 @@ func main() {
 	// length; if we know the slice is going to grow ahead
 	// of time, it's possible to pass a capacity explicitly
 	// as an additional parameter to `make`.
+	// 使用 make 函式創建切片時，需要指定切片的型別和長度。
 	s = make([]string, 3)
 	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
 
@@ -48,6 +49,8 @@ func main() {
 	// empty slice `c` of the same length as `s` and copy
 	// into `c` from `s`.
 	c := make([]string, len(s))
+    // 使用 copy 函式將切片 s 的內容複製到切片 c 中。
+	// copy 函式的第一個參數(c)是目標切片，第二個參數(s)是來源切片。
 	copy(c, s)
 	fmt.Println("cpy:", c)
 

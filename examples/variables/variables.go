@@ -30,6 +30,7 @@ func main() {
 	// initializing a variable, e.g. for
 	// `var f string = "apple"` in this case.
 	// This syntax is only available inside functions.
+	// 可以自動推斷變數的型別
 	f := "apple"
 	fmt.Println(f)
 }

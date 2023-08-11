@@ -15,6 +15,7 @@ func sum(nums ...int) {
 	// Within the function, the type of `nums` is
 	// equivalent to `[]int`. We can call `len(nums)`,
 	// iterate over it with `range`, etc.
+	// range 是 Go 語言中的關鍵字，用於遍歷集合。在這裡，它迭代 nums 集合中的每個元素。
 	for _, num := range nums {
 		total += num
 	}
