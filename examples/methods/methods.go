@@ -9,6 +9,8 @@ type rect struct {
 }
 
 // This `area` method has a _receiver type_ of `*rect`.
+// r 是 rect 的指標，但當你使用 r.width 和 r.height 時，Go 語言允許你直接訪問結構的字段，而不需要明確地解參考。
+// *rect 是指標類型的表示，*rect，它表示 "一個指向 rect 的指標"。
 func (r *rect) area() int {
 	return r.width * r.height
 }
@@ -31,6 +33,8 @@ func main() {
 	// a pointer receiver type to avoid copying on method
 	// calls or to allow the method to mutate the
 	// receiving struct.
+	// 取址操作（&）： 使用 & 來取得一個變數的記憶體位址。
+	// 當你有一個指針指向某個結構時，你可以直接使用 . 來訪問其欄位，而不需要明確的解參考。
 	rp := &r
 	fmt.Println("area: ", rp.area())
 	fmt.Println("perim:", rp.perim())
