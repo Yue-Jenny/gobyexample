@@ -1,5 +1,5 @@
 // Go supports _methods_ defined on struct types.
-
+// Go 提供了定義在 struct 上的方法。
 package main
 
 import "fmt"
