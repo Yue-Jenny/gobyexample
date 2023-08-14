@@ -38,7 +38,7 @@ type argError struct {
 	arg  int
 	prob string
 }
-
+// 定義了一個自定義的錯誤類型 argError 和該錯誤類型的一個方法 Error()
 func (e *argError) Error() string {
 	return fmt.Sprintf("%d - %s", e.arg, e.prob)
 }
